@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOZE - Premium Headphones Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <div class="logo">BOZE</div>
+        
+        <div class="nav-links" id="navLinks">
+            <a href="#home" class="active">HOME</a>
+            
+            <!-- Catalog Dropdown -->
+            <div class="nav-item has-dropdown">
+                <a href="#catalog" class="dropdown-toggle">
+                    CATALOG <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu catalog-dropdown">
+                    <div class="dropdown-content">
+                        <!-- Left Promo Image -->
+                        <div class="dropdown-promo">
+                            <img src="https://boze-theme.myshopify.com/cdn/shop/files/Boze_Mega_Menu_-_3_750x.png?v=1614372408" alt="Headphone Promo">
+                        </div>
+                        
+                        <!-- Product Categories -->
+                        <div class="dropdown-categories">
+                            <div class="category-column">
+                                <h4>Bluetooth Headsets</h4>
+                                <ul>
+                                    <li><a href="#">USB Stereo PC Headset</a></li>
+                                    <li><a href="#">MS Corded USB Headset</a></li>
+                                    <li><a href="#">USB MS Stereo Headset</a></li>
+                                    <li><a href="#">USB Mono PC Headset</a></li>
+                                    <li><a href="#">MS Stereo USB Headset</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="category-column">
+                                <h4>Wireless Headsets</h4>
+                                <ul>
+                                    <li><a href="#">Wideband Binaural Headset</a></li>
+                                    <li><a href="#">Duo QD Corded Headset</a></li>
+                                    <li><a href="#">Supraplus Monaural Headset</a></li>
+                                    <li><a href="#">Stereo Headset With Stand</a></li>
+                                    <li><a href="#">Duo Flex Cordless Headset</a></li>
+                                </ul>
+                            </div>
+                            
+                            <div class="category-column">
+                                <h4>Cordless Headsets</h4>
+                                <ul>
+                                    <li><a href="#">Stereo Bluetooth Headset</a></li>
+                                    <li><a href="#">Noise Cancelling Headset</a></li>
+                                    <li><a href="#">USB PC Cordless Headset</a></li>
+                                    <li><a href="#">Stereo Corded USB Headset</a></li>
+                                    <li><a href="#">Stereo PC Bluetooth Headset</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Promo Image -->
+                        <div class="dropdown-promo promo-right">
+                            <img src="https://boze-theme.myshopify.com/cdn/shop/files/Boze_Mega_Menu_-_4_750x.png?v=1614372408" alt="Black Friday Special">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- About Dropdown -->
+            <div class="nav-item has-dropdown">
+                <a href="#about" class="dropdown-toggle">
+                    ABOUT US <i class="fas fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-menu about-dropdown">
+                    <a href="#">Services</a>
+                    <a href="#">News</a>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="navlinks2">
+            <a href="#membership">MEMBERSHIP</a>
+            <a href="#login">LOG IN</a>
+            </div>
+        </div>
+        
+        <div class="cart-icon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+</nav>
+    <!-- Hero Section with Slider -->
+    <section class="hero-section" id="home">
+        <button class="slider-arrow left" id="prevSlide">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        
+        <div class="hero-content">
+            <div class="text-content">
+                <h3 class="hero-title">Listen differently.</h3>
+                <h2 class="hero-subtitle">experience different.</h2>
+                <p class="hero-description">Make listening to music a delightful <br> experience make you feel like <br> magic. Stay tuned.</p>
+                <button class="cta-button">SHOP PRODUCT</button>
+            </div>
+        </div>
+        
+        <button class="slider-arrow right" id="nextSlide">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+        
+        <div class="mobile-text-box">
+            <h3 class="hero-title">Listen differently.</h3>
+            <h2 class="hero-subtitle">experience different.</h2>
+            <p class="hero-description">Make listening to music a delightful <br> experience make you feel like <br>magic. Stay tuned.</p>
+            <button class="cta-button">SHOP PRODUCT</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Latest Headphones</h2>
+        <p class="section-subtitle">Explore the Sound & Quality with the headphones new to the market</p>
+        
+        <div class="products-container">
+            <button class="product-arrow left" id="prevProduct">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="products-wrapper">
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" alt="HP BTP1 Headset" class="product-image main">
+                        <img src="https://boze-theme.myshopify.com/cdn/shop/products/shop-29_422e2e6d-e8fe-4435-b91b-26de6cc9ed1a.jpg?v=1599731421" alt="HP BTP1 Headset Close" class="product-image hover">
+                        <div class="product-overlay">
+                            <button class="icon-btn" title="Product Link"><i class="fas fa-link"></i></button>
+                            <button class="icon-btn" title="add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="icon-btn" title="Quick view"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <h3 class="product-title">HP BTP1 Headset</h3>
+                    <p class="product-price">Rs. 910.00</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=400&h=400&fit=crop" alt="Commando Headset" class="product-image main">
+                        <img src="https://boze-theme.myshopify.com/cdn/shop/products/shop-81_507b9dee-5e8d-4f10-8256-495f33a79508.jpg?v=1599731409" alt="Commando Headset Close" class="product-image hover">
+                        <div class="product-overlay">
+                            <button class="icon-btn" title="Product Link"><i class="fas fa-link"></i></button>
+                            <button class="icon-btn" title="add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="icon-btn" title="Quick view"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <h3 class="product-title">Commando Headset</h3>
+                    <p class="product-price">Rs. 860.00</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1528148343865-51218c4a13e6?w=400&h=400&fit=crop" alt="Closed Back Headset" class="product-image main">
+                        <img src="https://boze-theme.myshopify.com/cdn/shop/products/shop-39_e73afc4e-b246-4c83-8207-68b105703781.jpg?v=1599731403" alt="Closed Back Headset Close" class="product-image hover">
+                        <div class="product-overlay">
+                            <button class="icon-btn" title="Product Link"><i class="fas fa-link"></i></button>
+                            <button class="icon-btn" title="add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="icon-btn" title="Quick view"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <h3 class="product-title">Closed Back Headset</h3>
+                    <p class="product-price">Rs. 910.00</p>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=400&h=400&fit=crop" alt="Bluetooth Headphone" class="product-image main">
+                        <img src="https://boze-theme.myshopify.com/cdn/shop/products/shop-4_d4473519-8847-44ff-b320-215ed44f0739.jpg?v=1599731395" alt="Bluetooth Headphone Close" class="product-image hover">
+                        <div class="product-overlay">
+                            <button class="icon-btn" title="Product Link"><i class="fas fa-link"></i></button>
+                            <button class="icon-btn" title="add to wishlist"><i class="fas fa-heart"></i></button>
+                            <button class="icon-btn" title="Quick view"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                    <h3 class="product-title">Bluetooth Headphone</h3>
+                    <p class="product-price">Rs. 910.00</p>
+                </div>
+            </div>
+            
+            <button class="product-arrow right" id="nextProduct">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <h2 class="section-title">Make music listening to a magical experience</h2>
+        
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <h3>Special offers</h3>
+                <p>Ipsum dolor sit amet</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-broadcast-tower"></i>
+                </div>
+                <h3>Wireless</h3>
+                <p>Aliquam erat volutpat</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Noise Cancel</h3>
+                <p>Curabitur malead elit</p>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <h3>Extra Bass</h3>
+                <p>Nunc consequat nim</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section 1 -->
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-image">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/products/product-1.png?v=1602739157" alt="Premium Headphones">
+            </div>
+            <div class="info-content">
+                <h2>Extra Bass <br> Headphones</h2>
+                <p>Curabitur malesuada elit sed enim <br> placerat vitae interdum.</p>
+                <a href="#" class="info-button style-1">Add to cart</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section 2 - Image with Gallery -->
+    <section class="info-section style-2">
+      <div class="info-container">
+        <div class="info-content2">
+            <h2>Feel the unplugged</h2>
+            <p>Etiamid tincidunt uspendissa arcu nulla, portanec laciniac blandit edporta lobortics fermentum.</p>
+            <ul>
+                <li>Hendrerit maximus leo</li>
+                <li>Morbi eget rutrum erat</li>
+                <li>Phasellus id varius ante</li>
+            </ul>
+            <a href="https://boze-theme.myshopify.com/collections/cordless-headsets" class="info-button style-2">SHOP</a>
+        </div>
+        <div class="info-image-gallery">
+            <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-1_700x.png?v=1614403093" alt="Headphone View 1" class="gallery-main" id="galleryMain">
+            <div class="gallery-thumbs">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-1_700x.png?v=1614403093" alt="Thumb 1" class="thumb active" data-full="https://boze-theme.myshopify.com/cdn/shop/files/boze-2_9cf22e68-a674-4f38-9cb6-65d9413da477_700x.png?v=1614403096">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-2_70x70.png?v=1614403094" alt="Thumb 2" class="thumb" data-full="https://boze-theme.myshopify.com/cdn/shop/files/boze-2_9cf22e68-a674-4f38-9cb6-65d9413da477_700x.png?v=1614403096">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-3_thumb_184884df-9a6c-4b0a-8c7e-4be3bc8f2cd0_70x70.png?v=1614403096" alt="Thumb 3" class="thumb" data-full="https://boze-theme.myshopify.com/cdn/shop/files/boze-3_700x.png?v=1614403096">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-4_700x.png?v=1614403096" alt="Thumb 4" class="thumb" data-full="https://boze-theme.myshopify.com/cdn/shop/files/boze-4_700x.png?v=1614403096">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section 3 -->
+    <section class="info-section style-3">
+        <div class="info-container reverse">
+            <div class="info-content3">
+                <h3>In the zone. Every day.</h3>
+                <p>Pellentesque euismod vestibulum sollicitudin nuncsem consequat eget nisinon efficitur posuere.</p>
+                <a href="https://boze-theme.myshopify.com/" class="info-button style-3">Subscribe</a>
+            </div>
+            <div class="info-image3">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-11.png?v=1614334348" alt="Wireless Headphones">
+            </div>
+        </div>
+    </section>
+   <!-- Info Section 5 -->
+    <section class="info-section style-5">
+      <div class="info-container">
+        <div class="info-content5">        
+            <h2>Dance your heart out to the beats</h2>
+            <p>Donec sedorem dapibus, posuere molestie vivamusium aliquam gravida nibhet aliquam fringilla aliquam venenatis sapien vulputate.</p>
+            <a href="https://boze-theme.myshopify.com/collections/cordless-headsets" class="info-button style-5">HOW WE DO IT</a>
+        </div>
+        <div class="info-image5">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-12.png?v=1614334353" alt="Wireless Headphones">
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Section 4 -->
+    <section class="info-section style-3">
+        <div class="info-container reverse">
+            <div class="info-content3">
+                <h3>Our Mission</h3>
+                <p>Fusce ullamcorper pulvinar enimac elementum vulputate ellentesque morbisusem tristique.</p>
+                <a href="https://boze-theme.myshopify.com/collections/bluetooth-headsets" class="info-button style-3">SHOP NOW</a>
+            </div>
+            <div class="info-image3">
+                <img src="https://boze-theme.myshopify.com/cdn/shop/files/boze-4.png?v=1614403096" alt="Wireless Headphones">
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+<section class="instagram-section">
+    <div class="instagram-header">
+        <h2>Our Instagram</h2>
+        <p>Quisque sagittis ligula eu euismod ornare libero tincidunt. Tag @instagram</p>
+    </div>
+    
+    <div class="instagram-container">
+        <div class="instagram-wrapper">
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-1_large.jpg?v=1614334342" alt="Alicia Woods">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-1_large.jpg?v=1614334342" alt="Alicia" class="avatar">
+                    <div class="user-details">
+                        <h3>Alicia Woods</h3>
+                        <p>HR Specialist</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-2_large.jpg?v=1614335471" alt="Alex Jordan">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-2_large.jpg?v=1614335471" alt="Alex" class="avatar">
+                    <div class="user-details">
+                        <h3>Alex Jordan</h3>
+                        <p>Urban Planner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-3_large.jpg?v=1614335471" alt="Freda Casey">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-3_large.jpg?v=1614335471" alt="Freda" class="avatar">
+                    <div class="user-details">
+                        <h3>Freda Casey</h3>
+                        <p>Teacher Assistant</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-4_large.jpg?v=1614335471" alt="Shane Parker">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-4_large.jpg?v=1614335471" alt="Shane" class="avatar">
+                    <div class="user-details">
+                        <h3>Shane Parker</h3>
+                        <p>Web Developer</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-5_002aa443-5009-4b5b-bef6-6a83057d02c5_large.jpg?v=1614335471" alt="Erica Ryan">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-5_002aa443-5009-4b5b-bef6-6a83057d02c5_large.jpg?v=1614335471" alt="Erica" class="avatar">
+                    <div class="user-details">
+                        <h3>Erica Ryan</h3>
+                        <p>Systems Analyst</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instagram-card">
+                <div class="card-image">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-6_1397d55e-31f4-46bb-8e99-bff42ab4f002_large.jpg?v=1614335471" alt="Irvin Gross">
+                </div>
+                <div class="card-info">
+                    <img src="https://boze-theme.myshopify.com/cdn/shop/files/img-6_1397d55e-31f4-46bb-8e99-bff42ab4f002_large.jpg?v=1614335471" alt="Irvin" class="avatar">
+                    <div class="user-details">
+                        <h3>Irvin Gross</h3>
+                        <p>College Professor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" id="scrollToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<section class="info-section style-6">
+      <div class="info-container">
+        <div class="info-content6">
+            <h2>Need high on sound quality</h2>
+            <a href="https://boze-theme.myshopify.com/collections/cordless-headsets" class="info-button style-6">GET BOZE</a>
+     </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="services-container">
+        <div class="service-item">
+            <div class="service-icon">
+                <i class="fas fa-truck"></i>
+            </div>
+            <h3 class="service-title">Free Shipping</h3>
+            <p class="service-description">Free shipping on all orders</p>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-icon">
+                <i class="fas fa-piggy-bank"></i>
+            </div>
+            <h3 class="service-title">Money Returns</h3>
+            <p class="service-description">30 days for free return</p>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="service-title">Online Support</h3>
+            <p class="service-description">Support 24 hours a day</p>
+        </div>
+        
+        <div class="service-item">
+            <div class="service-icon">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3 class="service-title">Deals & Promotions</h3>
+            <p class="service-description">Price savings, discounts</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer class="footer">
+    <div class="footer-main">
+        <div class="footer-content">
+            <!-- Company Info Column -->
+            <div class="footer-column">
+                <div class="footer-logo">BOZE</div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-home"></i> 533 South Brown Dr.<br>Marietta, GA 30008</p>
+                    <p><i class="fas fa-phone"></i> 000-123-45678</p>
+                    <p><i class="fas fa-envelope"></i> support@example.com</p>
+                </div>
+            </div>
+            
+            <!-- Information Column -->
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help & FAQ's</a></li>
+                    <li><a href="#">Working Hours</a></li>
+                </ul>
+            </div>
+            
+            <!-- Support Column -->
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Order Return</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Shipping Details</a></li>
+                    <li><a href="#">Online Payment</a></li>
+                </ul>
+            </div>
+            
+            <!-- Newsletter Column -->
+            <div class="footer-column newsletter">
+                <h3>Sign up and save</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email address" required>
+                    <button type="submit">
+                        Sign Up <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+                <p class="newsletter-text">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p class="copyright">© 2025 boze theme (password: buddha) designthemes</p>
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" alt="Amex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Payoneer_logo.svg" alt="Diners">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_Logo.svg" alt="Discover">
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
