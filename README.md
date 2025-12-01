@@ -1,4 +1,4 @@
-# 🎧 BOZE Headphones – E-Commerce Home Page Frontend
+# BOZE Headphones – E-Commerce Home Page Frontend
 
 This repository contains the complete frontend code for the **BOZE Headphones** website — a modern, mobile-responsive e-commerce layout built using **HTML, CSS, and JavaScript**.
 
