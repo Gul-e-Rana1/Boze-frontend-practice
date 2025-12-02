@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-/* Navbar Styles */
+/* Navbar Style */
 .navbar {
     position: fixed;
     top: 0;
@@ -2024,3 +2024,4 @@ hero-section {
         font-size: 0.85rem;
     }
 }
+
