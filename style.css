@@ -291,108 +291,6 @@ body {
     justify-content: center;
     font-size: 0.75rem;
 }
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 5px);
-    }
-    
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -7px);
-    }
-    
-    .nav-links {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        flex-direction: column;
-        background: white;
-        width: 90%;
-        padding: 2rem;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: left 0.3s;
-        height: calc(100vh - 70px);
-        align-items: flex-start;
-        overflow-y: auto;
-    }
-    
-    .nav-links.active {
-        left: 0;
-    }
-    
-    .nav-links > a,
-    .nav-item {
-        width: 100%;
-        padding: 0.8rem 0;
-        border-bottom: 1px solid #f0f0f0;
-    }
-    
-    .nav-item > a {
-        width: 100%;
-    }
-    
-    .dropdown-menu {
-        position: static;
-        opacity: 1;
-        visibility: visible;
-        transform: none;
-        box-shadow: none;
-        margin-top: 0.5rem;
-        padding-left: 1rem;
-        display: none;
-    }
-    
-    .nav-item.mobile-active .dropdown-menu {
-        display: block;
-    }
-    
-    .catalog-dropdown {
-        min-width: auto;
-        padding: 1rem 0;
-    }
-    
-    .dropdown-content {
-        flex-direction: column;
-        width: 100%;
-        height: 4rem;
-    }
-    
-    .dropdown-promo {
-        width: 100%;
-        height: 250px;
-    }
-    
-    .dropdown-categories {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-    
-    .about-dropdown {
-        padding: 0.5rem 0;
-    }
-} 
-
-@media (max-width: 480px) {
-    .nav-container {
-        padding: 0 1rem;
-    }
-    
-    .logo {
-        font-size: 1.5rem;
-    }
-    
-    .cart-icon {
-        font-size: 1.3rem;
-    }
-} 
 
 /* Hero Section */
 .hero-section {
@@ -672,7 +570,7 @@ body {
     transform: translateX(0);
 }
 
-.product-overlay {
+.product-image-wrapper:hover .product-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -680,10 +578,11 @@ body {
     bottom: 0;
     background: rgba(0,0,0,0.7);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
     gap: 1rem;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3s;
 }
 
@@ -908,6 +807,49 @@ body {
     width: 110%;
     margin: 1.5rem 9rem 1.5rem 6rem;
 }
+
+.info-content32 h3 {
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    padding-right: 15rem;
+    margin-bottom: 1.5rem;
+    margin-left: 6rem;
+    margin-right: 1rem;
+    color: #000000;
+}
+
+.info-content32 p {
+    font-size: 1.1rem;
+    text-align: left;
+    padding-right: 5rem;
+    margin: 1.8rem 0rem 0.5rem 6rem;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.info-button.style-32 {
+    border: 2px solid #000000;
+    font-weight: 2rem;
+    background: white;
+    padding: 1rem 3rem 1rem 3rem;
+    margin: 1.5rem 16rem 2rem 6rem;
+    color: #000000;
+}
+
+.info-button.style-32:hover {
+    background: #333;
+    color: white;
+}
+
+.info-image32 img {
+    width: 100%;
+    position: relative;
+    width: 105%;
+    animation: fadeInBottom 1.2s ease;
+}
+
 .info-button.style-4 {
     border: 2px solid #f64451;
     background: #f64451;
@@ -1081,10 +1023,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.instagram-card:hover .card-image img {
-    transform: scale(1.1);
-}
-
 .card-info {
     padding: 1.5rem;
     display: flex;
@@ -1110,161 +1048,7 @@ body {
     right: 2rem;
     width: 50px;
     height: 50px;
-    background: linear-gradient(135deg, #ff6b6b, #f64451);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
-    box-shadow: 0 5px 20px rgba(246, 68, 81, 0.4);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
-    z-index: 999;
-}
-
-.scroll-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-}
-
-.scroll-to-top:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(246, 68, 81, 0.6);
-}
-
-.scroll-to-top:active {
-    transform: translateY(-2px);
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .instagram-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        animation: slideInstagram 15s linear infinite;
-    }
-    
-    .instagram-card {
-        min-width: calc(50% - 0.5rem);
-    }
-    
-    .card-image {
-        height: 200px;
-    }
-    
-    .scroll-to-top {
-        bottom: 1rem;
-        right: 1rem;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
-    }
-} 
-
-@keyframes slideInstagram {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-66.66%);
-    }
-}
-
-/* Instagram Section */
-.instagram-section {
-    padding: 5rem 2rem;
-    background: #f9f9f9;
-}
-
-.instagram-header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.instagram-header h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 1rem;
-}
-
-.instagram-header p {
-    font-size: 1.1rem;
-    color: #666;
-}
-
-.instagram-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.instagram-wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2rem;
-}
-
-.instagram-card {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.instagram-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card-image {
-    width: 100%;
-    height: 250px;
-    overflow: hidden;
-}
-
-.card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.instagram-card:hover .card-image img {
-    transform: scale(1.1);
-}
-
-.card-info {
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.user-details h3 {
-    font-size: 1.1rem;
-    color: #333;
-    margin-bottom: 0.3rem;
-}
-
-.user-details p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Scroll to Top Button */
-.scroll-to-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 50px;
-    height: 50px;
-    background: linear-gradient(135deg, #ff6b6b, #f64451);
+    background: linear-gradient(135deg, #f64451, #f64451);
     color: white;
     border: none;
     border-radius: 50%;
@@ -1294,62 +1078,6 @@ body {
     transform: translateY(-2px) scale(1);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .instagram-container {
-        position: relative;
-    }
-    
-    .instagram-wrapper {
-        display: flex;
-        gap: 1rem;
-        animation: none;
-        transition: transform 0.5s ease;
-    }
-    
-    .instagram-card {
-        min-width: calc(50% - 0.5rem);
-        flex-shrink: 0;
-    }
-    
-    .card-image {
-        height: 200px;
-    }
-    
-    .card-info {
-        padding: 1rem;
-    }
-    
-    .user-details h3 {
-        font-size: 1rem;
-    }
-    
-    .user-details p {
-        font-size: 0.85rem;
-    }
-    
-    .scroll-to-top {
-        bottom: 1rem;
-        right: 1rem;
-        width: 45px;
-        height: 45px;
-        font-size: 1.1rem;
-    }
-    
-    .instagram-header h2 {
-        font-size: 2rem;
-    }
-    
-    .instagram-header p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .instagram-section {
-        padding: 3rem 1rem;
-    }
-} */
 
 /* Services Section */
 .services-section {
@@ -1753,199 +1481,67 @@ body {
 hero-section {
     background-image: url'https://boze-theme.myshopify.com/cdn/shop/files/slider3-bg_2000x.jpg?v=1614355817';
     align-items: center;
+    size: 50%;
 }
 
-    .hero-section.text-content  {
+    .hero-section h3, h2, p, button  {
         align-items: center;
-    }
-    
-    /* .text-content {
-        display: block;
-        position: absolute;
-        bottom: 2rem;
-        left: 1rem;
-        right: 1rem;
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(10px);
-        padding: 2rem;
-        border-radius: 10px;
-        z-index: 5;
-    }
-    
-    .hero-content .hero-title {
-        font-size: 2rem;
-        color: #000000;
-    }
-    
-    .hero-content .hero-subtitle {
-        font-size: 2rem;
-    }
-    
-    .hero-content .hero-description {
-        font-size: 0.95rem;
-    }
-    
-    .hero-content .cta-button {
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    } */
-    
-    .slider-arrow {
-        display: none;
-    }
-    
-    .slider-dots {
-        flex-direction: column;
-        bottom: auto;
-        top: 50%;
-        left: auto;
-        right: 1rem;
-        transform: translateY(-50%);
-    }
-
-    slider-dots {
-     position: absolute;
-     bottom: 2rem;
-     left: 50%;
-     transform: translateX(-50%);
-     display: flex;
-     gap: 1rem;
-     z-index: 10;
-    }
-
-    .dot {
-      width: 12px;
-      height: 12px;
-     border-radius: 50%;
-     background: rgba(255, 255, 255, 0.5);
-     cursor: pointer;
-     transition: all 0.3s;
-    }
-
-    .dot.active {
-      background: rgb(0, 0, 0);
-      transform: scale(1.2);
-    }
-    
-    .features-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .features-container::before {
-        display: none;
-    }
-    
-    .products-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-    }
-    
-    .product-arrow {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-    }
-    
-    .product-arrow.left {
-        left: -10px;
-    }
-    
-    .product-arrow.right {
-        right: -10px;
-    }
-    
-    .info-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .info-container.reverse {
-        direction: ltr;
-    }
-    
-    .info-content h2 {
-        font-size: 1.8rem;
-    }
-    
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .features-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
     }
 }
 
 /* Mobile Responsive Fixes - Add at the end of CSS file */
 
 @media (max-width: 768px) {
-    /* 1. Hero Section Mobile Fix */
-    /* .hero-section {
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
+ .hero-section {
+        height: 80vh;
+        width: 100%;
+        background-position: relative;
         display: flex;
-        align-items: center;
         padding-bottom: 4rem;
-    } */
-    
-    .text-content {
-        align-items: center;
+        align-items: flex-start;
     }
     
+    .hero-content {
+        display: none;
+    }
     .text-content {
-        display: none !important;
+        align-items: center;
     }
     
     .mobile-text-box {
-        display: block;
-        position: absolute;
-        bottom: 2rem;
-        left: 1rem;
-        right: 1rem;
+        display: flex;
+        flex-direction:column;
+        position:relative;
+        margin: 4rem;
         background: rgba(255, 255, 255, 0.4);
         backdrop-filter: blur(10px);
         padding: 2rem;
         border-radius: 10px;
-        z-index: 5;
     }
     
-    .hero-content .hero-title {
+    .mobile-text-box .hero-title {
         font-size: 2rem;
         color: #000000;
         align-items: center;
-        margin: 5rem;
+        margin: 2rem;
     }
     
-    .hero-content .hero-subtitle {
+    .mobile-text-box .hero-subtitle {
         font-size: 2rem;
+        margin: 2rem;
     }
     
-    .hero-content .hero-description {
+    .mobile-text-box .hero-description {
         font-size: 0.95rem;
+        margin: 2rem;
     }
     
-    .hero-content .cta-button {
+    .mobile-text-box .cta-button {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+        margin: 2rem;
     }
-    
+
     .slider-arrow {
         display: none;
     }
@@ -2023,7 +1619,7 @@ hero-section {
     }
 
     /* 3. Product Card Hover Icons Fix */
-    .product-overlay {
+    .product-overlay:hover, .product-overlay:active {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-end;
@@ -2254,7 +1850,7 @@ hero-section {
     }
     
     .card-info {
-        display: none;
+        display: visible;
     }
 
     /* 9. Info Section Style-6 Mobile Fix */
