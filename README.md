@@ -1,6 +1,6 @@
 # BOZE Headphones – E-Commerce Home Page Frontend
 
-This repository contains the complete frontend code for the **BOZE Headphones** website — a modern, mobile-responsive e-commerce layout built using **HTML, CSS, and JavaScript**.
+This repository contains the Home Page frontend code for the **boze-theme.myshopify.com** website - a modern, mobile-responsive e-commerce layout built using **HTML, CSS, and JavaScript**.
 
 The site includes a hero slider, product showcase, multiple promotional sections, and a fully responsive navigation system with a mobile hamburger menu.
 
@@ -25,14 +25,13 @@ The site includes a hero slider, product showcase, multiple promotional sections
   - Hamburger menu opens a vertical navigation panel  
   - Logo centered  
   - Cart shown on right side  
-- No horizontal scrolling / blank white area  
 
 ---
 
 ## Products Section
 - Desktop: 4 products in a row  
 - Hover:  
-  - Product image swaps to a zoomed image with a “boom” animation  
+  - Product image swaps to a zoomed image with an animation  
   - Three icons appear:  
     -  Product Link  
     - Add to Wishlist  
@@ -51,8 +50,7 @@ Several full-width sections featuring:
 - Clickable mini-thumbnails that change the main image (in relevant section)  
 - Complete responsive behavior:  
   - Some images hide on mobile  
-  - Some shift above text  
-  - All alignments follow your design requirements  
+  - Some shift above text   
 
 ---
 
@@ -70,6 +68,6 @@ Several full-width sections featuring:
 - **CSS**
   - Flexbox
   - Animations & transitions
-- **JavaScript 
+- **JavaScript** 
 
 
