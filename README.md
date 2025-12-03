@@ -1,4 +1,4 @@
-# BOZE Headphones – E-Commerce Home Page Frontend
+# boze-theme.myshopify.com – Home Page Frontend
 
 This repository contains the Home Page frontend code for the **boze-theme.myshopify.com** website - a modern, mobile-responsive e-commerce layout built using **HTML, CSS, and JavaScript**.
 
