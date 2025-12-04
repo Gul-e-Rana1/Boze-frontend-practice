@@ -545,7 +545,7 @@ body {
     transition: transform 0.3s;
 }
 
-.product-card:hover {
+.product-card:hover , .product-card:active {
     transform: translateY(-10px);
 }
 
@@ -595,8 +595,8 @@ body {
 }
 
 .icon-btn {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: white;
     border: none;
@@ -607,6 +607,7 @@ body {
     font-size: 1.1rem;
     transition: all 0.3s;
     position: relative;
+    margin: 0.1rem 0.2rem -0.6rem 0.2rem;
 }
 
 .icon-btn:hover {
@@ -1536,8 +1537,8 @@ hero-section {
         flex-direction:column;
         position:relative;
         margin: 4rem;
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.4) ;
+        backdrop-filter: blur(4px);
         padding: 2rem;
         border-radius: 10px;
     }
@@ -1615,7 +1616,6 @@ hero-section {
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
-        animation: autoScrollProducts 20s linear infinite alternate;
     }
     
     .products-wrapper::-webkit-scrollbar {
@@ -1626,20 +1626,13 @@ hero-section {
         min-width: calc(50% - 0.5rem);
         flex-shrink: 0;
         scroll-snap-align: start;
+        border-radius: 10px;
     }
     
     .product-image-wrapper {
         height: 200px;
     }
-    
-    @keyframes autoScrollProducts {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-50% - 0.5rem));
-        }
-    }
+
 
     /* 3. Product Card Hover Icons Fix */
     .product-overlay:hover, .product-overlay:active {
@@ -1656,9 +1649,10 @@ hero-section {
     }
     
     .icon-btn {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         font-size: 1rem;
+        margin: 0.1rem -0.6rem -0.6rem -0.2rem;
     }
 
     /* 4. Info Section "Extra Bass Headphones" Mobile Fix */
@@ -1860,19 +1854,6 @@ hero-section {
     .instagram-wrapper {
         display: flex;
         gap: 1rem;
-        animation: autoScrollInstagram 15s linear infinite;
-    }
-    
-    @keyframes autoScrollInstagram {
-        0% {
-            transform: translateX(0);
-        }
-        50% {
-            transform: translateX(calc(-100% + 100vw - 2rem));
-        }
-        100% {
-            transform: translateX(0);
-        }
     }
     
     .instagram-card {
@@ -2064,4 +2045,4 @@ hero-section {
     .mobile-text-box .hero-description {
         font-size: 0.85rem;
     }
-}
+} 
