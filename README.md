@@ -38,7 +38,6 @@ The site includes a hero slider, product showcase, multiple promotional sections
     - Quick View  
 - Mobile:  
   - Only **2 products visible at a time**  
-  - Swipe/arrow slider for viewing the rest  
 
 ---
 
