@@ -552,7 +552,7 @@ body {
 .product-image-wrapper {
     position: relative;
     overflow: hidden;
-    height: 300px;
+    height: 250px;
 }
 
 .product-image {
@@ -574,7 +574,7 @@ body {
 }
 
 .product-image-wrapper:hover .product-image.hover {
-    opacity: 1;
+    opacity: 1;  
     transform: translateX(0);
 }
 
@@ -593,7 +593,7 @@ body {
     opacity: 1;
     transition: opacity 0.3s;
 }
-
+ 
 .icon-btn {
     width: 40px;
     height: 40px;
@@ -2043,6 +2043,6 @@ hero-section {
     }
     
     .mobile-text-box .hero-description {
-        font-size: 0.85rem;
+        font-size: 0.85rem; 
     }
 }
