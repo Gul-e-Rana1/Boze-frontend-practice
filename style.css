@@ -546,7 +546,7 @@ body {
 }
 
 .product-card:hover , .product-card:active {
-    transform: translateY(-10px);
+    transform: translateY(-3px);
 }
 
 .product-image-wrapper {
@@ -2045,4 +2045,4 @@ hero-section {
     .mobile-text-box .hero-description {
         font-size: 0.85rem;
     }
-} 
+}
