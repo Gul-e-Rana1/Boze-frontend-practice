@@ -218,11 +218,10 @@ function initProductAutoScroll() {
     if (window.innerWidth <= 768) {
         // Stop any existing animation
         clearInterval(productAutoScrollInterval);
-        productsWrapper.style.animation = 'none';
         
-        const cardWidth = productCards[0].offsetWidth + 16; // width + gap
+        const cardWidth = productCards[0].offsetWidth + 16; 
         const totalCards = productCards.length;
-        const maxPosition = totalCards; // Show 2 cards at a time, so max is total - 2
+        const maxPosition = totalCards; 
         
         productAutoScrollInterval = setInterval(() => {
             // Move by 1 product position
@@ -233,11 +232,7 @@ function initProductAutoScroll() {
                 currentProductPosition = 0;
             }
             
-            // Quick smooth transition (0.6s)
-            productsWrapper.style.transition = 'transform 0.6s ease-in-out';
-            productsWrapper.style.transform = `translateX(-${currentProductPosition * cardWidth}px)`;
-            
-        }, 3000); // Slide every 3 seconds
+        }); 
         
     } else {
         // Desktop view - clear interval and reset
