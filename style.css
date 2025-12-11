@@ -53,6 +53,7 @@ body {
     display: flex;
     gap: 2rem;
     align-items: center;
+    text-decoration: none;
     flex: 1;
 }
 .nav-item a {
@@ -78,7 +79,6 @@ body {
 }
 
 .nav-links > a::after {
-    content: '';
     text-decoration: none;
     position: absolute;
     bottom: -5px;
@@ -91,6 +91,7 @@ body {
 .nav-links a:hover,
 .nav-links a.active {
     color: #f64451;
+    text-decoration: none !important;
 }
 
 .nav-links > a.active::after,
@@ -2043,6 +2044,6 @@ hero-section {
     }
     
     .mobile-text-box .hero-description {
-        font-size: 0.85rem; 
+        font-size: 0.85rem;
     }
 }
